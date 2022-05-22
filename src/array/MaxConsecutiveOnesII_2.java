@@ -28,7 +28,6 @@ public class MaxConsecutiveOnesII_2 {
                 left++;
             }
 
-
             longestSequence=Math.max(longestSequence, right-left+1);
 
             // expand our window
