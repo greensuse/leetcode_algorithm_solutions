@@ -1,9 +1,9 @@
 package list;
 
-public class DesignLinkedList {
+public class DesignLinkedList_1 {
 
     public static void main(String[] args) {
-        DesignLinkedList myLinkedList  = new DesignLinkedList();
+        DesignLinkedList_1 myLinkedList  = new DesignLinkedList_1();
         myLinkedList.addAtHead(7);
         myLinkedList.addAtHead(2);
         myLinkedList.addAtHead(1);
@@ -19,7 +19,7 @@ public class DesignLinkedList {
 
     Node head = null;
 
-    public DesignLinkedList() {
+    public DesignLinkedList_1() {
 
     }
 
