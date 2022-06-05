@@ -13,6 +13,7 @@ public class RotateList_2 {
 
         if(size==0 || k%size==0) return head;
 
+        //prev points to last node in the list
         prev.next=head;
         int start=size-k%size;
 
@@ -23,6 +24,7 @@ public class RotateList_2 {
             p=p.next;
         }
 
+        //prev points to new last node in the list
         prev.next=null;
         ListNode newHead=p;
 
