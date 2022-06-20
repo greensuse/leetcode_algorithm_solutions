@@ -35,6 +35,5 @@ public class PascalTriangle {
         }
 
         return res;
-
     }
 }
