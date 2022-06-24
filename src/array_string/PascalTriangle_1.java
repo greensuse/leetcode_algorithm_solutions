@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
-public class PascalTriangle {
+public class PascalTriangle_1 {
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> res=new ArrayList<>();
         if(numRows==1) {
