@@ -3,7 +3,7 @@ package hash_table;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LongestSubstringWithoutRepeating {
+public class LongestSubstringWithoutRepeating_1 {
     public int lengthOfLongestSubstring(String s) {
         if(s.length()<=1) return s.length();
 
