@@ -13,7 +13,6 @@ public class CountUnivalueSubtrees_2 {
             return true;
         }
 
-
         if(!isUnival(node.left, node.val) | !isUnival(node.right, node.val)) {
             return false;
         }
