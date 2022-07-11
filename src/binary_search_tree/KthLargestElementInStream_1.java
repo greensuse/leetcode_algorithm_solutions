@@ -2,11 +2,11 @@ package binary_search_tree;
 
 import java.util.PriorityQueue;
 
-public class KthLargestElementInStream {
+public class KthLargestElementInStream_1 {
     private static int K;
     private PriorityQueue<Integer> queue=null;
 
-    public KthLargestElementInStream(int k, int[] nums) {
+    public KthLargestElementInStream_1(int k, int[] nums) {
         this.K=k;
         queue = new PriorityQueue<>(k);
 
