@@ -1,6 +1,6 @@
 package binary_search;
 
-public class BinarySearch {
+public class BinarySearch_1 {
     public int search(int[] nums, int target) {
         return doSearch(nums, 0, nums.length-1, target);
     }
