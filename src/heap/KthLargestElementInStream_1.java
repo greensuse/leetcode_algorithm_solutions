@@ -1,8 +1,6 @@
 package heap;
 
-import org.w3c.dom.Node;
-
-public class KthLargestElementInStream {
+public class KthLargestElementInStream_1 {
     // insert a node into the BST
     private Node insertNode(Node root, int num) {
         if (root == null) {
@@ -36,7 +34,7 @@ public class KthLargestElementInStream {
     private Node root;
     private int m_k;
 
-    public KthLargestElementInStream(int k, int[] nums) {
+    public KthLargestElementInStream_1(int k, int[] nums) {
         root = null;
         for (int i = 0; i < nums.length; ++i) {
             root = insertNode(root, nums[i]);
