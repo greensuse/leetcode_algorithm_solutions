@@ -3,7 +3,7 @@ package heap;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
-public class KWeakestRowsInMatrix {
+public class KWeakestRowsInMatrix_1 {
     public int[] kWeakestRows(int[][] mat, int k) {
         PriorityQueue<SoldierRow> queue=new PriorityQueue<>();
         for(int i=0; i<mat.length; i++) {
