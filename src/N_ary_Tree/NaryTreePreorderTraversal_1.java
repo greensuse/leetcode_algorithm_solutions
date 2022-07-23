@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 
-public class NaryTreePreorderTraversal {
+public class NaryTreePreorderTraversal_1 {
     public List<Integer> preorder(Node root) {
         List<Integer> ans=new LinkedList<>();
         if(root==null) return ans;
