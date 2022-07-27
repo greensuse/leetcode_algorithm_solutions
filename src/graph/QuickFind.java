@@ -1,9 +1,9 @@
 package graph;
 
-public class UnionFind {
+public class QuickFind {
     private int[] root;
 
-    public UnionFind(int size) {
+    public QuickFind(int size) {
         root = new int[size];
         for(int i=0; i<size; i++) {
             root[i]=i;
@@ -36,7 +36,7 @@ public class UnionFind {
 // Test Case
 class App {
     public static void main(String[] args) throws Exception {
-        UnionFind uf = new UnionFind(10);
+        QuickFind uf = new QuickFind(10);
         // 1-2-5-6-7 3-8-9 4
         uf.union(1, 2);
         uf.union(2, 5);
