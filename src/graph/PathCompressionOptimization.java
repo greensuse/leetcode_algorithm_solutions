@@ -3,6 +3,7 @@ package graph;
 public class PathCompressionOptimization {
     private int[] root;
     private int[] rank;
+    private int count;
 
     public PathCompressionOptimization(int size) {
         root=new int[size];
@@ -11,6 +12,7 @@ public class PathCompressionOptimization {
             root[i]=i;
             rank[i]=1;
         }
+        count=size;
     }
 
     public int find(int x) {
@@ -34,10 +36,15 @@ public class PathCompressionOptimization {
                 root[rootY]=rootX;
                 rank[rootX]+=1;
             }
+            count--;
         }
     }
 
     public boolean connected(int x, int y) {
         return find(x)==find(y);
+    }
+
+    public int getCount() {
+        return count;
     }
 }

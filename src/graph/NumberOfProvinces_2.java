@@ -3,7 +3,7 @@ package graph;
 import java.util.HashSet;
 import java.util.Set;
 
-public class NumberOfProvinces {
+public class NumberOfProvinces_2 {
     public int findCircleNum(int[][] isConnected) {
         int n=isConnected.length;
         PathCompressionOptimization disjointSet = new PathCompressionOptimization(n);
@@ -20,7 +20,7 @@ public class NumberOfProvinces {
             rootSet.add(disjointSet.find(i));
         }
 
-        return rootSet.size();
+        return disjointSet.getCount();
     }
 }
 
