@@ -9,6 +9,8 @@ public class ValidTree_3 {
         System.out.println(result);
     }
     public boolean validTree(int n, int[][] edges) {
+        if(n!=edges.length-1) return false;
+
         List<List<Integer>> adjacencyList=new ArrayList<>();
         for(int i=0; i<n; i++) {
             adjacencyList.add(new ArrayList<>());
