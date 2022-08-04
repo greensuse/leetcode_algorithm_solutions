@@ -6,14 +6,14 @@ import java.util.List;
 import java.util.Map;
 
 public class CloneGraph {
-    Map<Node, Node> map=new HashMap<>();
+    Map<Node, Node> visited =new HashMap<>();
     public Node cloneGraph(Node node) {
         if(node==null) return node;
 
-        if(map.containsKey(node)) return map.get(node);
+        if(visited.containsKey(node)) return visited.get(node);
 
         Node clone=new Node(node.val, new ArrayList<Node>());
-        map.put(node, clone);
+        visited.put(node, clone);
 
         for(Node neighbor : node.neighbors) {
             clone.neighbors.add(cloneGraph(neighbor));
