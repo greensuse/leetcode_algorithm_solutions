@@ -1,16 +1,14 @@
 package recursion_i;
 
-public class SwapNodesInPairs {
-
-    public ListNode swapPairs(ListNode head) {
+public class ReverseLinkedList {
+    public ListNode reverseList(ListNode head) {
         if(head==null || head.next==null) return head;
-        ListNode firstNode=head;
-        ListNode secondNode=head.next;
 
-        firstNode.next=swapPairs(secondNode.next);
-        secondNode.next=firstNode;
+        ListNode p=reverseList(head.next);
+        head.next.next=head;
+        head.next=null;
 
-        return secondNode;
+        return p;
     }
 
     class ListNode {
@@ -21,5 +19,3 @@ public class SwapNodesInPairs {
         ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
 }
-
-
