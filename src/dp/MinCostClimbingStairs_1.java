@@ -3,7 +3,7 @@ package dp;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MinCostClimbingStairs {
+public class MinCostClimbingStairs_1 {
     int[] cost;
     Map<Integer, Integer> memo=new HashMap<>();
     public int minCostClimbingStairs(int[] cost) {
