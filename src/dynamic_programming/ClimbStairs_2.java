@@ -1,4 +1,4 @@
-package dp;
+package dynamic_programming;
 
 //bottom-up implementation
 public class ClimbStairs_2 {

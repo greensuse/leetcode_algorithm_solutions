@@ -1,7 +1,4 @@
-package dp;
-
-import java.util.HashMap;
-import java.util.Map;
+package dynamic_programming;
 
 public class MinCostClimbingStairs_2 {
 
