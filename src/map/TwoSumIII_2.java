@@ -1,8 +1,7 @@
-package hash_table;
+package map;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 public class TwoSumIII_2 {
     public static void main(String[] args) {

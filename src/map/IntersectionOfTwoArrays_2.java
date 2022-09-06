@@ -1,8 +1,11 @@
-package hash_table;
+package map;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-public class IntersectionOfTwoArrays_1 {
+public class IntersectionOfTwoArrays_2 {
     public int[] intersect(int[] nums1, int[] nums2) {
         if(nums1.length>nums2.length) {
             return intersect(nums2, nums1);
@@ -16,15 +19,17 @@ public class IntersectionOfTwoArrays_1 {
 
         List<Integer> overlap=new ArrayList<>();
         for(int n : nums2) {
-            if(map.getOrDefault(n,0)>0) {
+            int count=map.getOrDefault(n,0);
+            if(count>0) {
                 overlap.add(n);
-                map.put(n, map.get(n)-1);
+                map.put(n, count-1);
             }
         }
 
         int[] res=new int[overlap.size()];
-        for(int i=0; i<overlap.size(); i++) {
-            res[i]=overlap.get(i);
+        int i=0;
+        for(int n: overlap) {
+            res[i++]=n;
         }
         return res;
     }

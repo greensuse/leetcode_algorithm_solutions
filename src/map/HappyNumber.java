@@ -1,4 +1,4 @@
-package hash_table;
+package map;
 
 public class HappyNumber {
     public boolean isHappy(int n) {
