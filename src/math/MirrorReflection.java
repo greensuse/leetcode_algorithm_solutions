@@ -1,4 +1,4 @@
-package other;
+package math;
 
 //p*ext=q*reflection
 public class MirrorReflection {
