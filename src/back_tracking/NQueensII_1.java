@@ -3,7 +3,7 @@ package back_tracking;
 import java.util.LinkedList;
 import java.util.List;
 
-public class NQueensII {
+public class NQueensII_1 {
     public static List<List<String>> solveNQueens(int n) {
         char[][] board=new char[n][n];
         for(int i=0; i<n; i++) {
